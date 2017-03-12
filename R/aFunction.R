@@ -2,9 +2,9 @@
 
 #' Foo
 #'
-#' @param x
+#' @param x An argument of any type
 #'
-#' @return x
+#' @return x That argument right back at you
 #' @export
 
 foo<-function(x) {x}
