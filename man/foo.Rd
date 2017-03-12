@@ -2,16 +2,16 @@
 % Please edit documentation in R/aFunction.R
 \name{foo}
 \alias{foo}
-\title{Foo}
+\title{Foo a random function just as a test}
 \usage{
 foo(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{An argument of any type}
 }
 \value{
-x
+x That argument right back at you
 }
 \description{
-Foo
+Foo a random function just as a test
 }
