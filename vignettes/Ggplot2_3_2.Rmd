@@ -1,0 +1,33 @@
+---
+title: "Ggplot2_3_2"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(GGally)
+library(dplyr)
+library(tidyverse)
+library(PerformanceAnalytics)
+```
+
+## Pair Plots
+
+```{r pairPlots}
+# pairs
+pairs(iris[1:4])
+
+# chart.Correlation
+
+chart.Correlation(iris[1:4])
+
+# ggpairs
+mtcars_fact<-as_tibble(mtcars)
+mtcars_fact$cyl<-as.factor(mtcars_fact$cyl)
+ggpairs(mtcars_fact[1:3])
+
+```
+
