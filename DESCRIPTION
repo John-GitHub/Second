@@ -10,11 +10,12 @@ License: GPL-2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
+Imports: 
+  maps,
+  dplyr,
+  readr,
+  graphics,
+  tidyr
 Collate: 
     'aFunction.R'
-    'maps,'
-    'dplyr,'
-    'dplyr'
-    'readr,'
-    'readr'
     'fars_functions_completed.R'
