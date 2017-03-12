@@ -4,7 +4,8 @@
 #' @param filename The name of a csv file.
 #'
 #' @return A tbl representation of the data contained in the csv file.
-#' @import  readr
+#' @importFrom readr read_csv
+#' @importFrom dplyr tbl_df
 #' @details An error will result if the file name does not exist.
 #' @example
 #' fars_read("accident_2013.csv.bz2")
@@ -26,7 +27,6 @@ fars_read <- function(filename) {
 #'
 #' @return The name of the file from the Fatality Analysis Reporting System for
 #'   that year.
-#' @import readr
 #' @examples
 #' foo<-fars_read(make_filename(2013))
 #' @details An error will result if the year is outside the scope of years
@@ -45,7 +45,7 @@ make_filename <- function(year) {
 #'
 #' @return A list of tbls representing the year, Month data extracted from the
 #'   given set of years from the Fatality Analysis Reporting System.
-#' @import readr, dplyr
+#' @importFrom dplyr %>% mutate select
 #' @details An error will result if the indicated packages are not attached.
 #' @examples
 #' foo<-fars_read_years(2013:2015)
@@ -72,8 +72,8 @@ fars_read_years <- function(years) {
 #'
 #' @return A table of the number of fatal accidents by year by month for the
 #'   given set of years.
-#'
-#' @import  readr, dplyr
+#' @importFrom dplyr %>% bind_rows group_by summarize
+#' @importFrom tidyr spread
 #' @details An error will result if the years are not given as full 4 digit
 #'   representions or if the indicated packages are not attached.
 #' @examples
@@ -98,7 +98,9 @@ fars_summarize_years <- function(years) {
 #' @
 #' @examples
 #' fars_map_state(1,2013)
-#' @import  dplyr
+#' @importFrom dplyr filter
+#' @importFrom maps map
+#' @importFrom graphics points
 #' @details An error will result if the years are not given as full 4 digit
 #'   representions or if the indicated packages are not attached.
 #' @export
