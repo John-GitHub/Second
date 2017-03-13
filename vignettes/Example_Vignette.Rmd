@@ -33,8 +33,8 @@ make_filename(2013)
 A list of tbls representing the year, Month data extracted from the given set of years from the Fatality Analysis Reporting System.
 
 ```{r manyYears,message=FALSE, warning=FALSE}
-#setwd(system.file("extdata", package = "Second"))
-#fars_read_years(2013:2015)
+setwd(system.file("extdata", package = "Second"))
+fars_read_years(2013:2015)
 
 ```
 ## Summarize by years.
@@ -42,8 +42,8 @@ A list of tbls representing the year, Month data extracted from the given set of
 Creates a country-wide summary table of the number of fatal accidents by month by year for a given set of years.
 
 ```{r SummaryYear, message=FALSE, warning=FALSE}
-#setwd(system.file("extdata", package = "Second"))
-#fars_summarize_years(2013:2015)
+setwd(system.file("extdata", package = "Second"))
+fars_summarize_years(2013:2015)
 
 ```
 
@@ -52,8 +52,8 @@ Creates a country-wide summary table of the number of fatal accidents by month b
 Creates a summary table of the number of fatal accidents by month by year for a given set of years for a given state.
 
 ```{r byStae, message=FALSE, warning=FALSE}
-#setwd(system.file("extdata", package = "Second"))
-#fars_map_state(1,2013)
+setwd(system.file("extdata", package = "Second"))
+fars_map_state(1,2013)
 
 ```
 
