@@ -24,5 +24,7 @@ An error will result if the years are not given as full 4 digit
   representions or if the indicated packages are not attached.
 }
 \examples{
+\dontrun{
 fars_map_state(1,2013)
+}
 }

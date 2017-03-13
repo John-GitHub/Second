@@ -23,5 +23,7 @@ Analysis Reporting System.
 An error will result if the indicated packages are not attached.
 }
 \examples{
+\dontrun{
 foo<-fars_read_years(2013:2015)
+}
 }

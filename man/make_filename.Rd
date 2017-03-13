@@ -23,5 +23,7 @@ An error will result if the year is outside the scope of years
   available as data sets.
 }
 \examples{
+\dontrun{
 foo<-fars_read(make_filename(2013))
+}
 }
