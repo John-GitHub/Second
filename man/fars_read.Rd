@@ -21,7 +21,5 @@ Analysis Reporting System.
 An error will result if the file name does not exist.
 }
 \examples{
-\dontrun{
 fars_read("accident_2013.csv.bz2")
-}
 }
