@@ -16,4 +16,7 @@ Imports: dplyr,
          tidyr
 Collate:
     'fars_functions_completed.R'
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
