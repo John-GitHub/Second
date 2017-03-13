@@ -14,5 +14,6 @@ Imports: dplyr,
          maps,
          readr,
          tidyr
-Collate: 
+Collate:
     'fars_functions_completed.R'
+Suggests: testthat
