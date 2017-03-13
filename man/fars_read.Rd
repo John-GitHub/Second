@@ -21,5 +21,7 @@ Analysis Reporting System.
 An error will result if the file name does not exist.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
+\dontrun{
+fars_read(system.file("extdata","accident_2013.csv.bz2",package="Second"))
+}
 }

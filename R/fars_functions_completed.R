@@ -8,7 +8,9 @@
 #' @importFrom dplyr tbl_df
 #' @details An error will result if the file name does not exist.
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
+#' \dontrun{
+#' fars_read(system.file("extdata","accident_2013.csv.bz2",package="Second"))
+#' }
 #' @export
 
 fars_read <- function(filename) {
@@ -36,8 +38,9 @@ fars_read <- function(filename) {
 #' @export
 make_filename <- function(year) {
         year <- as.integer(year)
-
-#        sprintf("accident_%d.csv.bz2", year)
+#        FileName<-paste0("accident_",year,".csv.bz2")
+#        system.file("extdata",FileName,package="Second")
+        sprintf("accident_%d.csv.bz2", year)
 }
 
 #' Read a csv file in as a tbl for multiple years of data from the Fatality
